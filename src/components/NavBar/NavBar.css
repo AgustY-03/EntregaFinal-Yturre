@@ -1,0 +1,53 @@
+.navbar{
+    background-color: rgb(134, 216, 243);
+    padding: 15px;
+}
+
+.brand{
+    position: absolute;
+    text-shadow: 2px 2px black;
+    font-size: 35px;
+    top: 8px;
+}
+
+.brand:hover{
+    text-shadow: 2px 2px white;
+}
+
+.position{
+    display: flex;
+    justify-content: right;
+}
+
+.option-navbar{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    list-style: none;
+}
+
+.option-navbar a{
+    text-decoration: none;
+    color: black;
+    margin-left: 100px;
+}
+
+.option-navbar a:hover{
+    color: grey;
+    text-decoration: 3px underline;
+}
+
+.white{
+    color: white;
+}
+
+.white:hover{
+    color: black;
+}
+
+.orange{
+    color: orange;
+}
+
+.orange:hover{
+    color: blue;
+}

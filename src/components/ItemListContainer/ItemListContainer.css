@@ -1,0 +1,10 @@
+.position-item{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.text-content{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
