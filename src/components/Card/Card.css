@@ -5,6 +5,7 @@
     transition: 0.3s;
     animation: ease-in;
     background-color: white; 
+    border-radius: 25px;
 
 }
 
@@ -26,6 +27,8 @@ h3, p{
 
 .product-title{
     margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .product-price{
@@ -58,6 +61,7 @@ h3, p{
 .btn-vermas button:hover{
     background-color: rgba(27, 156, 252, 0.1);
     transform: scale(1.0);
+    cursor: pointer;
 }
 
 .btn-vermas p{

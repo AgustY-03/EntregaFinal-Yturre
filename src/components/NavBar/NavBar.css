@@ -1,6 +1,10 @@
 .navbar{
     background-color: rgb(134, 216, 243);
     padding: 15px;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 150px;
+    z-index: 99;
 }
 
 .brand{
@@ -8,6 +12,7 @@
     text-shadow: 2px 2px black;
     font-size: 35px;
     top: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .brand:hover{

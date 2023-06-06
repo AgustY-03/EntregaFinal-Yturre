@@ -1,8 +1,9 @@
 import React from 'react'
+import "./AcercaDePage.css"
 
 const AcercaDePage = () => {
   return (
-    <div>AcercaDePage</div>
+    <h1 className='title'>Acerca De</h1>
   )
 }
 
