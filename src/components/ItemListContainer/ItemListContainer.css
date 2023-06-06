@@ -8,3 +8,17 @@
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.list-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 0 0 100px;
+    gap: 40px;
+    align-items: center;
+      
+}
+
+.Link{
+    text-decoration: none;
+    color: black;
+}

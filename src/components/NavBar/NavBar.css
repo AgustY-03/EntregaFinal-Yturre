@@ -25,13 +25,13 @@
     list-style: none;
 }
 
-.option-navbar a{
+.option-navbar{
     text-decoration: none;
     color: black;
     margin-left: 100px;
 }
 
-.option-navbar a:hover{
+.option-navbar:hover{
     color: grey;
     text-decoration: 3px underline;
 }

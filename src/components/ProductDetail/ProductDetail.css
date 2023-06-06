@@ -1,0 +1,37 @@
+.limits{
+    margin-top: 20px;
+}
+
+.detail-container{
+    padding: 350px;
+    width: 20%;
+    height: auto;
+}
+
+div .detail-image-cnt{
+    position: relative;
+}
+
+.detail-image{
+    position: relative;
+    left: 150px;
+    top: -490px;
+    max-height: 550px;
+}
+
+.detail-content-cnt{
+    position: relative;
+    width: 40%;
+    top: 50px;
+    left: 1000px;
+}
+
+.detail-title{
+    margin-bottom: 2rem;
+    font-size: 35px;
+}
+
+.detail-description{
+    font-size: 20px;
+}
+
