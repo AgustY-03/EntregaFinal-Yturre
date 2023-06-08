@@ -96,13 +96,3 @@
     font-size: 20px ;
 }
 
-.link-category{
-    color: black;
-    text-decoration: none;
-}
-
-.link-category:hover{
-    color: blue;
-    text-decoration: underline;
-}
-
