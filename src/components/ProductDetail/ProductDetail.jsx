@@ -5,6 +5,7 @@ import "./ProductDetail.css"
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 //React router dom
+import { Link } from 'react-router-dom';
 
 const ProductDetail = ({ data }) => {
 
@@ -13,7 +14,7 @@ const ProductDetail = ({ data }) => {
         <div className='detail-content-cnt'>
             <h2 className='detail-title'>{data.title}</h2>
             <p className='detail-description'>{data.description}</p>
-            <p className='detail-category'>Categorias: {data.category}</p>
+            <p className='detail-category'>Categorias: <Link to={`/category/${data.category}`} className='link-category'>{data.category}</Link></p>
             <p className='detail-price'>Precio: ${data.price}</p>
             <p className='add-cart-btn btn'>Añadir al carrito <ShoppingCartOutlinedIcon className='icon-cart' /></p>
         </div>

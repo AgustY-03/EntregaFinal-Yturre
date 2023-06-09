@@ -7,7 +7,6 @@ export const useFetch = (url) => {
     useEffect(() => {
         axios(url).then((res) =>{
             setData(res.data);
-            console.log(data);
         });
     }, [url]);
 

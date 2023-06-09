@@ -11,6 +11,7 @@ import ItemDetailPage from "./Pages/ItemDetailPage/ItemDetailPage";
 // Components
 
 import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/acercade" element={<AcercaDePage />} />
           <Route path="/contacto" element={<ContactoPage />} />
           <Route path="/item/:id" element={<ItemDetailPage />} />
+          <Route path="/category/:category" element={<ItemListContainer />} />
         </Routes>
     </Router>
     );
