@@ -8,6 +8,7 @@
 .text-content{
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
 }
 
 .list-container{
@@ -16,7 +17,6 @@
     margin: 0 0 0 100px;
     gap: 40px;
     align-items: center;
-      
 }
 
 .Link{

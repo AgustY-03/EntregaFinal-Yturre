@@ -1,10 +1,11 @@
 .navbar{
-    background-color: rgb(134, 216, 243);
+    background-color: rgb(207, 116, 104);
     padding: 15px;
     position: fixed;
     width: 100%;
     margin-bottom: 150px;
     z-index: 99;
+    box-shadow: 0px 0px 15px -5px;
 }
 
 .brand{
@@ -41,6 +42,10 @@
     text-decoration: 3px underline;
 }
 
+.option{
+    cursor: pointer;
+}
+
 .white{
     color: white;
 }
@@ -55,4 +60,84 @@
 
 .orange:hover{
     color: blue;
+}
+
+#dropdown{
+    display: none;
+    position: static;
+    position: absolute;
+    top: 55px;
+    left: 1100px;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    transition: 500ms;
+}
+
+#dropdown ul{
+    color: black;
+}
+
+div ul li{
+    list-style: none;
+}
+
+.category-title{
+    display: none;
+}
+
+.category-title{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.opciones-comp{
+    display: none;
+    height: auto;
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    left: 65px;
+    top: 55px;
+}
+
+.opciones-comp{
+    display: block;
+}
+
+.opcion-margin{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.opcion-margin:hover{
+    text-decoration: underline;
+}
+
+.opciones-peri{
+    display: block;
+    height: auto;
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    left: 335px;
+    top: 55px;
+}
+
+.close-opcion{
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    left: 410px;
+    top: 0px;
+}
+
+.close-opcion:hover{
+    color: red;
 }

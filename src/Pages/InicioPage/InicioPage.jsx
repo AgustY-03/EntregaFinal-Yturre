@@ -6,7 +6,7 @@ import ItemListContainer from '../../components/ItemListContainer/ItemListContai
 const InicioPage = () => {
   return (
     <div className="catalogo">
-      <ItemListContainer greeting="Bienvenidos a FullTech" />
+      <ItemListContainer greeting="Lista de productos" />
     </div>
   )
 }

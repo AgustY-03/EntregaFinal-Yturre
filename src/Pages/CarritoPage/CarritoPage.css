@@ -1,0 +1,224 @@
+.form{
+    position: relative;
+    top: 35px;
+    left: 0px;
+}
+
+.btn-normal{
+    padding: 10px;
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 20px;
+    margin: 15px;
+    border: 1px solid rgb(37, 36, 36);
+    color: white;
+}
+
+.btn-normal:hover{
+    cursor: pointer;
+}
+
+.btn-inicio{
+    background-color: rgb(59, 99, 230);
+}
+
+.btn-inicio:hover{
+    background-color: rgb(39, 79, 209);
+    color: rgb(219, 210, 210);
+}
+
+.btn-vaciar{
+    background-color: rgb(224, 59, 59);
+}
+
+.btn-vaciar:hover{
+    background-color: rgb(167, 41, 41);
+    color: rgb(219, 210, 210);
+}
+
+.btn-finalizar{
+    background-color: rgb(93, 180, 59);
+}
+
+.btn-finalizar:hover{
+    background-color: rgb(72, 138, 46);
+    color: rgb(219, 210, 210);
+}
+
+.cart-info{
+    font-family:monospace;
+    font-size: 25px;
+    margin: 50px;
+    color: rgb(180, 175, 175);
+    text-align: center;
+}
+
+.position-form{
+  display: inline-block;
+  
+}
+
+.input_label {
+    font-size: 15px;
+    color: #8B8E98;
+    font-weight: 600;
+  }
+  
+  .nombreModal{
+    width: auto;
+    position: relative;
+    top: -20px;
+    left: 80px;
+  }
+  
+  .form-width{
+    width: auto;
+  }
+  
+  .input_position{
+    position: relative;
+    top: 30px;
+    right: 75px;
+    
+  }
+  
+  .apellidoModal{
+    width: auto;
+    position: relative;
+    top: -77px;
+    left: 320px;
+  }
+
+  .tarjeta{
+    position: relative;
+    left: 115px;
+  }
+  
+  .tarjetaModal{
+    width: auto;
+    position: relative;
+    top: -30px;
+    left: -40px;
+  }
+  
+  .cvvModal{
+    position: relative;
+    width: auto;
+    top: -86px;
+    left: 350px;
+  }
+  
+  .cvvt{
+    position: relative;
+    left: -30px;
+  }
+  
+  .vencimientoModal{
+    position: relative;
+    width: 40%;
+    top: -136px;
+    left: 555px;
+  }
+
+  .margin-ven{
+    margin-bottom: 50px;
+  }
+  
+  .mespad{
+    margin-right: 15px;
+  }
+  
+  .aniowidth{
+    position: relative;
+    top: 0px;
+    left: 10px;
+    width: 40%;
+  }
+  
+  .direccionCliente{
+    position: relative;
+    top: -170px;
+    left: 65px;
+  }
+
+  .cp{
+    position: relative;
+    left: 35px;
+  }
+  
+  .CPCliente{
+    position: relative;
+    left: 210px;
+    top: -56px;
+  }
+
+  .cp-width{
+    width: 35%;
+  }
+  
+  .localidadCliente{
+    position: relative;
+    left: 405px;
+    top: -113px;
+  }
+  
+  .form-position{
+    position: relative;
+    top: -30px;
+    height: 400px;
+  }
+  
+  .btnposition{
+    position: absolute;
+    top: 308px;
+    left: 610px;
+    padding: 8px 20px 8px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+  }
+
+  .btnposition:hover{
+    cursor: pointer;
+    background-color: rgb(4, 99, 4);
+    color: rgb(219, 210, 210);
+  }
+
+  .btn-close{
+    position: absolute;
+    top: 308px;
+    left: 710px;
+    padding: 8px 20px 8px 20px;
+    float: right;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.btn-close:hover{
+  cursor: pointer;
+  background-color: rgb(167, 41, 41);
+  color: rgb(219, 210, 210);
+}
+
+#checkout-confirm{
+    position: relative;
+    left: 760px;
+    margin-top: 20px;
+    background-color: rgba(172, 255, 47, 0.616);
+    border: 1px solid green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: green;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    display: none;
+}

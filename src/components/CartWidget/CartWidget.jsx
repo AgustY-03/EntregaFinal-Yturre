@@ -1,11 +1,15 @@
 import React from "react";
 import "./CartWidget.css";
-import { Link } from "react-router-dom";
+
+// Context
+import { useContext } from "react";
+import { ItemsContext } from "../../context/ItemsContext/ItemsContext";
 
 export const CartWidget = () => {
+  const { cart } = useContext(ItemsContext) 
   return (
     <div className="cart">
-        <p>0</p>
+        { cart.length }
     </div>
   )
 }

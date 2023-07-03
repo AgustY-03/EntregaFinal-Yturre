@@ -9,7 +9,7 @@ const Card = ({ data }) => {
         </div>
         <div className='card-detail'>
             <div className='product-title'>
-                <h3>{ data.title}</h3>
+                <h3>{ data.name}</h3>
             </div>
             <div className='product-price'>
                 <p>${data.price}</p>
