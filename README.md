@@ -45,7 +45,7 @@ No se requiere instalación para utilizar nuestra plataforma, ya que es una tien
 ## Como levantar el proyecto
 
 ```
-git clone url repo
+git clone https://github.com/AgustY-03/EntregaFinal-Yturre
 npm install
 npm run dev
 ```
