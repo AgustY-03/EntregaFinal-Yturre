@@ -42,6 +42,13 @@ Algunas de las librerias utilizadas fueron:
 
 No se requiere instalación para utilizar nuestra plataforma, ya que es una tienda en línea accesible a través de cualquier navegador web. Simplemente visita nuestro sitio web en [www.fulltech.com](https://www.fulltech.com) y comienza a explorar nuestra amplia selección de productos.
 
+## Como levantar el proyecto
+
+```
+git clone url repo
+npm install
+npm run dev
+```
 ---
 
 ¡Gracias por visitar FullTech! Esperamos que encuentres los componentes y periféricos que necesitas para mejorar tu experiencia informática. Si tienes alguna pregunta o necesitas asistencia, nuestro equipo de soporte está listo para ayudarte. ¡Disfruta de tu experiencia de compra en FullTech!
