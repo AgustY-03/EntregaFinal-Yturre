@@ -1,9 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import "./ItemListContainer.css"
 
-// Custom Hook
-/* import useFetch from '../../hooks/useFetch'; */
-
 // Components
 import Card from '../Card/Card';
 
