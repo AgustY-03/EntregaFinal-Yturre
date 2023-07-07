@@ -1,6 +1,9 @@
 .cart{
     margin-left: -20px;
     margin-right: 30px;
+}
 
-    background-color: rgba(32, 175, 32, 0.61);
+.quantity-cart{
+    position: relative;
+    top: -3.5px;
 }

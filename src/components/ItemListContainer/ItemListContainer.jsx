@@ -22,7 +22,7 @@ const ItemListContainer = ({ greeting }) => {
   const { items } = useContext(ItemsContext);
 
     if(category != null){
-      const [productByCategory, setProductByCategory] = useState()
+      const [productByCategory, setProductByCategory] = useState([])
 
       useEffect( () => {
 
@@ -39,7 +39,7 @@ const ItemListContainer = ({ greeting }) => {
       }
       , [category])
 
-      return (
+      return productByCategory.length > 0 ? (
         <div>
           <div className='position-item'>
               <p className='text-content'>Categoria: {category}</p>
@@ -56,6 +56,15 @@ const ItemListContainer = ({ greeting }) => {
                   )
               })
           }
+          </div>
+        </div>
+      ) : (
+        <div>
+          <div className='position-item'>
+              <p className='text-content'>Categoria: {category}</p>
+          </div>
+          <div className='unfound-products'>
+            <p>No se encontraron productos de la categoria {category}... 😔</p>
           </div>
         </div>
       )

@@ -68,6 +68,7 @@ const ContactoPage = () => {
           <TextField 
             placeholder='Ingrese su nombre'
             className='textfield'
+            inputProps={{ pattern:"[a-zA-Z ]+", minLength:"3", maxLength:"20" }}
             name='name'
             value={contact.name}
             onChange={handleOnChange}
@@ -78,6 +79,7 @@ const ContactoPage = () => {
           <TextField 
             placeholder='Ingrese su apellido'
             className='textfield'
+            inputProps={{ pattern:"[a-zA-Z ]+", minLength:"3", maxLength:"20" }}
             name='lastName'
             value={contact.lastName}
             onChange={handleOnChange}
@@ -86,6 +88,7 @@ const ContactoPage = () => {
         </div>
         <div className='content-field'>
           <TextField 
+            type='email'
             placeholder='Ingrese su correo'
             className='textfield'
             name='email'
@@ -95,7 +98,8 @@ const ContactoPage = () => {
           />
         </div>
         <div className='content-field'>
-          <TextField 
+          <TextField
+            type='email'
             placeholder='Confirmar correo'
             className='textfield'
             name='email'

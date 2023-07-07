@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDIVjpCGqpJf93nMKpcHbUk0--jmjuExas",
-  authDomain: "fulltech-e09ec.firebaseapp.com",
-  projectId: "fulltech-e09ec",
-  storageBucket: "fulltech-e09ec.appspot.com",
-  messagingSenderId: "344278328548",
-  appId: "1:344278328548:web:d39e158537cda241c0b8f1"
+  apiKey: `${import.meta.env.VITE_API_KEY}`,
+  authDomain: `${import.meta.env.VITE_AUTH_DOMAIN}`,
+  projectId: `${import.meta.env.VITE_PROJECT_ID}`,
+  storageBucket: `${import.meta.env.VITE_STORAGE_BUCKET}`,
+  messagingSenderId: `${import.meta.env.VITE_MESSAGING_SENDER_ID}`,
+  appId: `${import.meta.env.VITE_APP_ID}`
 };
 
 // Initialize Firebase

@@ -5,11 +5,14 @@ import "./CartWidget.css";
 import { useContext } from "react";
 import { ItemsContext } from "../../context/ItemsContext/ItemsContext";
 
+// MUI ICONS
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+
 export const CartWidget = () => {
   const { cart } = useContext(ItemsContext) 
   return (
     <div className="cart">
-        { cart.length }
+        <ShoppingCartOutlinedIcon /><span className="quantity-cart">{ cart.length }</span>
     </div>
   )
 }

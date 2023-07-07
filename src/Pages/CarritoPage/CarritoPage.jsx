@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './CarritoPage.css'
 
 // DOM
@@ -70,7 +70,8 @@ const CarritoPage = () => {
 
   const handleOnChange = (e) => {
     const { value, name } = e.target;
-    setValues({ ...values, [name]: value})
+    values.products = cart
+    setValues({ ...values, [name]: value, products: cart})
   }
 
   const handleChange = (event) => {
@@ -88,9 +89,9 @@ const CarritoPage = () => {
       document.getElementById('checkout-confirm').style.display= 'block';
       const addElement = document.getElementById('checkout-confirm');
       addElement.innerHTML = `
-        <p>Numero de contacto: ${docRef.id}</p>
+        <p>Gracias por la compra. ID del pedido: ${docRef.id}</p>
       `;
-    }, "2000");
+    }, "1000");
     handleClose()
     setTimeout
   }
@@ -99,7 +100,7 @@ const CarritoPage = () => {
     <div>
         <h1 className='title'>Carrito</h1>
         <Cart />
-        <CartTotal />
+        <CartTotal name="products" />
         <Link to="/">
             <button className='btn-normal btn-inicio'>Volver a inicio</button>
         </Link>
@@ -123,7 +124,7 @@ const CarritoPage = () => {
                   <TextField
                     placeholder='Ingresa tu nombre'
                     className='input_position'
-                    minLength="3" maxLength="20" pattern="[a-zA-Z ]+"
+                    inputProps={{ pattern:"[a-zA-Z ]+", minLength:"3", maxLength:"20" }}
                     name="name"
                     value={values.name}
                     onChange={handleOnChange}
@@ -135,7 +136,7 @@ const CarritoPage = () => {
                   <TextField
                     placeholder='Ingresa tu apellido'
                     className='input_position'
-                    minLength="3" maxLength="20" pattern="[a-zA-Z ]+"
+                    inputProps={{ pattern:"[a-zA-Z ]+", minLength:"3", maxLength:"20" }}
                     name="lastName"
                     value={values.lastName}
                     onChange={handleOnChange}
@@ -145,10 +146,9 @@ const CarritoPage = () => {
                 <div className="tarjetaModal form-width">
                   <label className="input_label tarjeta" htmlFor="tarjeta"> Tarjeta de debito/credito:</label>
                   <TextField
-                    placeholder='Ingresa la tarjeta'
-                    className='input_position'
-                    minLength="16" maxLength="19" 
-                    pattern="[0-9 ]+"
+                    placeholder='Ingresa la tarjeta (todo junto)'
+                    className='input_position' 
+                    inputProps={{ pattern:"[0-9 ]+", minLength:"16", maxLength:"16" }}
                     required
                   />
                 </div>
@@ -157,8 +157,7 @@ const CarritoPage = () => {
                   <TextField
                     placeholder='Ingrese el CVV'
                     className='input_position'
-                    minLength="3" maxLength="4" 
-                    pattern="[0-9 ]+"
+                    inputProps={{ pattern:"[0-9 ]+", minLength:"3", maxLength:"4"  }}
                     required
                   />
                 </div>
@@ -191,8 +190,7 @@ const CarritoPage = () => {
                   <TextField
                     placeholder='Año'
                     className='input_position aniowidth'
-                    minLength="2" maxLength="2" 
-                    pattern="[0-9 ]+"
+                    inputProps={{ pattern:"[0-9 ]+", minLength:"2", maxLength:"2"  }}
                     required
                   />
                   </div>
@@ -203,7 +201,7 @@ const CarritoPage = () => {
                     <TextField
                       placeholder='Ingresa su direccion'
                       className='input_position'
-                      minLength="7" maxLength="40"
+                      inputProps={{ pattern:"[a-zA-Z1-9 ]+", minLength:"3", maxLength:"40" }}
                       name='address' 
                       value={values.address} 
                       onChange={handleOnChange}
@@ -215,8 +213,7 @@ const CarritoPage = () => {
                     <TextField
                       placeholder='Ingresa su CP'
                       className='input_position cp-width'
-                      minLength="3" maxLength="4"
-                      pattern="[0-9]+"
+                      inputProps={{ pattern:"[0-9 ]+", minLength:"3", maxLength:"4"  }}
                       name='cp' 
                       value={values.cp} 
                       onChange={handleOnChange}
@@ -228,8 +225,7 @@ const CarritoPage = () => {
                     <TextField
                       placeholder='Ingresa su localidad'
                       className='input_position'
-                      minLength="3" maxLength="30"
-                      pattern="[a-zA-Z ]+"
+                      inputProps={{ pattern:"[a-zA-Z ]+", minLength:"3", maxLength:"20" }}
                       name='city' 
                       value={values.city} 
                       onChange={handleOnChange}

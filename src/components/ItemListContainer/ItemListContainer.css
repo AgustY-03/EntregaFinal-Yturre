@@ -23,3 +23,13 @@
     text-decoration: none;
     color: black;
 }
+
+.unfound-products{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    top: 290px;
+    font-size: 35px;
+    color: rgb(180, 175, 175);;
+}

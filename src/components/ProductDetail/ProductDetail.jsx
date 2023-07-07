@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ProductDetail.css"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // MUI ICONS
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';

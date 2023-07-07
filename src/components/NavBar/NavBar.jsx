@@ -17,11 +17,11 @@ const NavBar = (props) => {
 
     return (
         <nav className="navbar">
-            <Link to="/">
+            <Link onClick={cerrarCategorias} to="/">
             <h2 className="brand white">Full<span className="orange">Tech</span></h2>
             </Link>
             <ul className="position">
-                <Link to="/" className="option-navbar">
+                <Link onClick={cerrarCategorias} to="/" className="option-navbar">
                     {props.opcion1}
                 </Link>
                 <div className="option-navbar option">
@@ -46,13 +46,13 @@ const NavBar = (props) => {
                         <p onClick={cerrarCategorias} className="close-opcion">x</p>
                     </div>
                 </div>
-                <Link to="/acercade" className="option-navbar">
+                <Link onClick={cerrarCategorias} to="/acercade" className="option-navbar">
                     {props.opcion3}
                 </Link>
-                <Link to="/contacto" className="option-navbar">
+                <Link onClick={cerrarCategorias} to="/contacto" className="option-navbar">
                     {props.opcion4}
                 </Link>
-                <Link to="/carrito" className="option-navbar option-cart">
+                <Link onClick={cerrarCategorias} to="/carrito" className="option-navbar option-cart">
                     <CartWidget />
                 </Link>
             </ul>
